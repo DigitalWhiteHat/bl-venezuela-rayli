@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Guía de SEO para las notas de Raylí Luján en Venezuela, Bloomberg Línea: qué temas rinden, cuánto de su tráfico es SEO, el impacto de las propuestas de SEO y qué dejar de publicar. Se actualiza cada lunes.">
+<title>Qué rinde en Venezuela · Raylí Luján</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  /* Identidad Bloomberg Línea: negro, blanco y el verde de «Línea» (#36BF58); titulares en grotesca tipo Neue Haas, texto en Lora */
+  :root {
+    color-scheme: light;
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --ink: #191919;
+    --ink-2: #3D3D3D;
+    --muted: #6B6B6B;
+    --rule: #DADADA;
+    --rule-strong: #BDBDBD;
+    --neutral-bg: #F4F4F4;
+    --accent: #36BF58;
+    --accent-ink: #15803D;
+    --accent-track: #E3F4E7;
+    --notes-bar: #191919;
+    --c-prop: #36BF58;
+    --c-rev: #0F6B34;
+    --c-rest: #D0D0D0;
+    --good: #15803D;
+    --good-bg: #E8F6EC;
+    --warn: #A15300;
+    --warn-bg: #FFF1E0;
+    --bad: #C0341F;
+    --bad-bg: #FDECE8;
+    --bar-bg: #000000;
+    --bar-ink: #FFFFFF;
+    --bar-muted: #BDBDBD;
+    --bar-accent: #36BF58;
+    --bar-rule: #2A2A2A;
+    --sans: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", "Helvetica Neue", "Inter Tight", Helvetica, Arial, sans-serif;
+    --serif: "Lora", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0A0A0A;
+      --surface: #141414;
+      --ink: #F2F2F2;
+      --ink-2: #CFCFCF;
+      --muted: #9A9A9A;
+      --rule: #2A2A2A;
+      --rule-strong: #4A4A4A;
+      --neutral-bg: #1C1C1C;
+      --accent: #30AF50;
+      --accent-ink: #4CD472;
+      --accent-track: #13261A;
+      --notes-bar: #CFCFCF;
+      --c-prop: #30AF50;
+      --c-rev: #14773A;
+      --c-rest: #3A3A3A;
+      --good: #4CD472;
+      --good-bg: #0F2A18;
+      --warn: #FFB060;
+      --warn-bg: #2E2110;
+      --bad: #FF7A66;
+      --bad-bg: #2E1512;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --ink: #F2F2F2;
+    --ink-2: #CFCFCF;
+    --muted: #9A9A9A;
+    --rule: #2A2A2A;
+    --rule-strong: #4A4A4A;
+    --neutral-bg: #1C1C1C;
+    --accent: #30AF50;
+    --accent-ink: #4CD472;
+    --accent-track: #13261A;
+    --notes-bar: #CFCFCF;
+    --c-prop: #30AF50;
+    --c-rev: #14773A;
+    --c-rest: #3A3A3A;
+    --good: #4CD472;
+    --good-bg: #0F2A18;
+    --warn: #FFB060;
+    --warn-bg: #2E2110;
+    --bad: #FF7A66;
+    --bad-bg: #2E1512;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: clamp(16px, 4vw, 44px);
+    padding-block: clamp(28px, 5vw, 56px) 72px;
+  }
+  a { color: var(--accent-ink); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  p { margin: 0; max-width: 68ch; }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* Masthead */
+  .mast {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: clamp(24px, 5vw, 64px);
+    align-items: end;
+  }
+  .kicker {
+    font: 600 12px/1.2 var(--sans);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--sans);
+    font-weight: 780;
+    font-size: clamp(44px, 7vw, 76px);
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: clamp(18px, 2vw, 20.5px);
+    line-height: 1.5;
+    color: var(--ink-2);
+    max-width: 46ch;
+  }
+  .spec {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 2px solid var(--ink);
+  }
+  .spec > div { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .spec > div:nth-child(odd) { padding-right: 18px; }
+  .spec dt {
+    font: 600 11px/1.3 var(--sans);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .spec dd { margin: 5px 0 0; font: 650 21px/1.15 var(--sans); color: var(--ink); }
+  .spec dd small { display: block; margin-top: 3px; font: 400 13px/1.35 var(--sans); color: var(--muted); }
+  .bezel {
+    height: 14px;
+    margin-top: 26px;
+    background:
+      repeating-linear-gradient(90deg, var(--accent) 0 2px, transparent 2px 60px) left bottom / 100% 14px no-repeat,
+      repeating-linear-gradient(90deg, var(--rule-strong) 0 1px, transparent 1px 12px) left bottom / 100% 7px no-repeat;
+  }
+
+  /* Sections */
+  section { margin-top: clamp(48px, 7vw, 76px); }
+  .sec-head { display: grid; gap: 10px; margin-bottom: 22px; }
+  .eyebrow {
+    font: 600 11.5px/1.2 var(--sans);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h2 {
+    font-family: var(--sans);
+    font-weight: 740;
+    font-size: clamp(28px, 3.6vw, 38px);
+    line-height: 1.02;
+    margin: 0;
+    text-wrap: balance;
+    max-width: 24ch;
+  }
+  .sec-head p { color: var(--ink-2); }
+  .stack { display: grid; gap: 14px; }
+  .note { font: 400 14px/1.5 var(--sans); color: var(--muted); max-width: 90ch; margin-top: 14px; }
+
+  /* Tables */
+  .table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+  table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; }
+  .t-topics { min-width: 900px; }
+  .t-hooks { min-width: 680px; }
+  .t-mix { min-width: 760px; }
+  .t-ever { min-width: 760px; }
+  .t-gsc { min-width: 720px; }
+  thead th {
+    font: 600 11px/1.3 var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: 12px 14px 10px 0;
+    border-bottom: 1px solid var(--rule-strong);
+    vertical-align: bottom;
+  }
+  tbody th, tbody td {
+    padding: 13px 14px 13px 0;
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+    vertical-align: middle;
+  }
+  tbody th { font-weight: 650; color: var(--ink); }
+  tbody th .how { display: block; margin-top: 3px; font: 400 13.5px/1.4 var(--serif); color: var(--muted); max-width: 42ch; }
+  th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.chan { color: var(--ink-2); white-space: nowrap; }
+  td.idx { color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td.idx b { font-weight: 650; color: var(--ink); }
+  .star { color: var(--muted); font-weight: 400; }
+  tr.ref-row th, tr.ref-row td { color: var(--muted); background: var(--neutral-bg); }
+  tr.ref-row th { padding-left: 10px; }
+  .title-cell { font-weight: 500; color: var(--ink); max-width: 46ch; }
+
+  .barline { display: grid; grid-template-columns: minmax(140px, 1fr) 54px; align-items: center; gap: 10px; }
+  .bar { position: relative; height: 12px; background: var(--accent-track); }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; width: var(--w); background: var(--accent); border-radius: 0 4px 4px 0; }
+  .bar .mid { position: absolute; left: var(--mid); top: -5px; bottom: -5px; width: 1px; background: var(--ink); }
+  .barline .val { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+  .pair { display: grid; gap: 5px; }
+  .pair .row { display: grid; grid-template-columns: minmax(140px, 1fr) 48px; align-items: center; gap: 10px; }
+  .pair .b { height: 9px; background: transparent; position: relative; }
+  .pair .b span { position: absolute; inset: 0 auto 0 0; width: var(--w); border-radius: 0 4px 4px 0; }
+  .pair .notes span { background: var(--notes-bar); }
+  .pair .views span { background: var(--accent); }
+  .pair .v { font-variant-numeric: tabular-nums; text-align: right; font-size: 13px; color: var(--ink-2); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.3 var(--sans); color: var(--ink-2); margin-bottom: 12px; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend i { display: inline-block; width: 18px; height: 9px; border-radius: 0 3px 3px 0; }
+  .legend .k-notes { background: var(--notes-bar); }
+  .legend .k-views { background: var(--accent); }
+  .legend .k-mid { width: 1px; height: 14px; background: var(--ink); border-radius: 0; }
+
+  /* Verdict chips */
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font: 650 12.5px/1 var(--sans);
+    padding: 6px 10px 6px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .chip svg { width: 9px; height: 9px; fill: currentColor; flex: none; }
+  .chip.up { color: var(--good); background: var(--good-bg); }
+  .chip.keep { color: var(--warn); background: var(--warn-bg); }
+  .chip.down { color: var(--bad); background: var(--bad-bg); }
+  .chip.flat { color: var(--ink-2); background: var(--neutral-bg); }
+
+  /* Title molds */
+  .molds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 26px; }
+  .mold {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 18px 20px 16px;
+    display: grid;
+    gap: 12px;
+    align-content: start;
+  }
+  .mold h3 { margin: 0; font: 650 12px/1.2 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .formula { font: 620 18px/1.35 var(--sans); color: var(--ink); text-wrap: balance; }
+  .formula b { font-weight: 620; color: var(--accent-ink); }
+  .mold ul { margin: 0; padding: 12px 0 0; list-style: none; display: grid; gap: 9px; border-top: 1px solid var(--rule); }
+  .mold li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: baseline; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+  .mold li .v { font: 600 13px/1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; }
+
+  /* Two-list plan */
+  .plan { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+  .plan > div { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 10px; align-content: start; }
+  .plan h3 { margin: 0; font: 700 15px/1.2 var(--sans); display: flex; align-items: center; gap: 8px; }
+  .plan ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+  .plan li { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .plan li::marker { color: var(--muted); }
+
+  /* Calendar */
+  .cal { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .cal li {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr) 210px;
+    gap: 22px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .when { font: 740 16px/1.15 var(--sans); text-transform: uppercase; letter-spacing: 0.02em; color: var(--ink); }
+  .when small { display: block; margin-top: 5px; font: 400 12.5px/1.3 var(--sans); text-transform: none; letter-spacing: 0; color: var(--muted); }
+  .what h3 { margin: 0 0 4px; font: 650 17px/1.3 var(--sans); text-wrap: balance; }
+  .what p { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .what .pitch { font-style: italic; color: var(--ink); margin-top: 6px; }
+  .bench { font: 400 13px/1.45 var(--sans); color: var(--muted); display: grid; gap: 6px; align-content: start; }
+  .bench b { font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .prio { display: inline-flex; align-items: center; gap: 7px; font: 650 12.5px/1 var(--sans); color: var(--ink); }
+  .prio svg { width: 11px; height: 11px; flex: none; }
+
+  /* Stop list */
+  .stop { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; border-top: 2px solid var(--ink); }
+  .stop li { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; }
+  .stop h3 { margin: 0; font: 650 16px/1.3 var(--sans); }
+  .stop p { font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--rule-strong); display: grid; gap: 8px; }
+  footer p { font: 400 13px/1.55 var(--sans); color: var(--muted); max-width: 100ch; }
+
+  @media (max-width: 820px) {
+    .mast { grid-template-columns: minmax(0, 1fr); }
+    .molds, .plan, .stop { grid-template-columns: minmax(0, 1fr); }
+    .cal li { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  }
+
+  /* Barra de Bloomberg Línea y tipografía de la casa */
+  .bl-bar { background: var(--bar-bg); color: var(--bar-ink); border-bottom: 1px solid var(--bar-rule); }
+  .bl-bar-in { max-width: 1100px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 44px); }
+  .bl-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding-block: 16px 14px; }
+  .bl-mark { font: 700 clamp(22px, 2.8vw, 30px)/1 var(--sans); letter-spacing: -0.025em; color: var(--bar-ink); white-space: nowrap; }
+  .bl-mark span { color: var(--bar-accent); }
+  .bl-tag { font: 600 11.5px/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--bar-muted); }
+  .bl-nav { display: flex; gap: 24px; overflow-x: auto; padding-block: 11px 12px; border-top: 1px solid var(--bar-rule); scrollbar-width: none; }
+  .bl-nav::-webkit-scrollbar { display: none; }
+  .bl-nav a { color: var(--bar-ink); text-decoration: none; font: 500 14px/1.2 var(--sans); white-space: nowrap; }
+  .bl-nav a:hover { color: var(--bar-accent); }
+  .bl-nav a:focus-visible { outline: 2px solid var(--bar-accent); outline-offset: 3px; border-radius: 2px; }
+  .kicker, .eyebrow { font: 700 12px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); }
+  h1 { font-family: var(--sans); font-weight: 600; font-size: clamp(34px, 5vw, 54px); line-height: 1.04; letter-spacing: -0.015em; color: var(--ink); max-width: 22ch; }
+  h2 { font-family: var(--sans); font-weight: 600; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.1; letter-spacing: -0.01em; color: var(--ink); }
+  .lede { font-family: var(--sans); font-size: clamp(18px, 1.9vw, 21px); line-height: 1.45; color: var(--ink-2); }
+  .byline { margin-top: 16px; font: 400 14px/1.4 var(--sans); color: var(--muted); max-width: none; }
+  .byline b { font-weight: 700; color: var(--ink); }
+  .bezel { height: 4px; margin-top: 28px; background: linear-gradient(90deg, var(--accent) 0 88px, var(--ink) 88px 100%); }
+
+  /* Guía de la semana */
+  .plan + .plan { margin-top: 16px; }
+  .sub-h { margin: 34px 0 14px; font: 700 13px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+  .semana { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .semana article { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 8px; align-content: start; }
+  .semana p { font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+  .semana .lbl { font: 700 12px/1.2 var(--sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-ink); }
+  .semana .pitch { font: 600 17px/1.35 var(--sans); color: var(--ink); text-wrap: balance; }
+  .semana .ev { font: 400 13px/1.45 var(--sans); color: var(--muted); }
+  .probar { margin: 0; padding-left: 18px; display: grid; gap: 8px; max-width: 80ch; }
+  .probar li { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .probar li::marker { color: var(--muted); }
+  @media (max-width: 820px) { .semana { grid-template-columns: minmax(0, 1fr); } }
+
+  /* Impacto de las propuestas (acotado a .imp) */
+  .imp .tiles { margin: 30px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--ink); }
+  .imp .tiles > div { padding: 14px 18px 14px 0; border-bottom: 1px solid var(--rule); }
+  .imp .tiles dt { font: 600 11px/1.3 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .imp .tiles dd { margin: 6px 0 0; font: 700 30px/1.05 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .imp .tiles dd small { display: block; margin-top: 5px; font: 400 13px/1.4 var(--sans); color: var(--muted); }
+  /* Chart */
+  .imp .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.3 var(--sans); color: var(--ink-2); margin-bottom: 12px; }
+  .imp .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .imp .legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
+  .imp .legend .k-prop { background: var(--c-prop); }
+  .imp .legend .k-rev { background: var(--c-rev); }
+  .imp .legend .k-rest { background: var(--c-rest); }
+  .imp .legend .k-ma { width: 18px; height: 2px; background: var(--ink); border-radius: 0; }
+  .imp .chart-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 10px 8px; position: relative; }
+  .imp #chart { position: relative; width: 100%; min-height: 300px; touch-action: pan-y; }
+  .imp #chart svg { display: block; overflow: visible; }
+  .imp #chart .tick { font: 500 11.5px var(--sans); fill: var(--muted); font-variant-numeric: tabular-nums; }
+  .imp #chart .evnum { font: 700 11px var(--sans); fill: var(--ink); }
+  .imp #chart .anno { font: 500 11.5px var(--sans); fill: var(--muted); }
+  .imp .tip { position: absolute; top: 0; left: 0; pointer-events: none; background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 9px 11px; font: 400 12.5px/1.45 var(--sans); color: var(--ink-2); box-shadow: 0 6px 18px rgba(0,0,0,.12); min-width: 190px; }
+  .imp .tip[hidden] { display: none; }
+  .imp .tip b { color: var(--ink); font-weight: 650; }
+  .imp .tip .row { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; font-variant-numeric: tabular-nums; }
+  .imp .tip .row i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .imp .tip .tot { border-top: 1px solid var(--rule); margin-top: 5px; padding-top: 5px; }
+  .imp .events { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px 26px; }
+  .imp .events li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start; font: 400 14px/1.45 var(--sans); color: var(--ink-2); }
+  .imp .events .num { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--ink); font: 700 11.5px var(--sans); color: var(--ink); background: var(--surface); }
+  .imp .events b { color: var(--ink); font-weight: 650; }
+
+  /* Tables */
+  .imp .table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+  .imp table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; }
+  .imp thead th { font: 600 11px/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 12px 14px 10px 0; border-bottom: 1px solid var(--rule-strong); vertical-align: bottom; }
+  .imp tbody th, .imp tbody td { padding: 13px 14px 13px 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .imp th.num, .imp td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .imp tbody th { font-weight: 650; color: var(--ink); }
+  .imp tr.muted th, .imp tr.muted td { color: var(--muted); background: var(--neutral-bg); }
+  .imp tr.muted th { padding-left: 10px; }
+  .imp .t-ab { min-width: 560px; }
+  .imp .t-ab thead th.num { white-space: normal; }
+  .imp .t-ab tbody th { white-space: nowrap; }
+  .imp .t-ab tbody th .sub { display: block; margin-top: 3px; font-weight: 400; font-size: 12.5px; }
+  .imp .t-prop { min-width: 900px; }
+  .imp .t-prop td.when { font: 650 14px/1.2 var(--sans); white-space: nowrap; color: var(--ink); }
+  .imp .t-prop td.when small { display: block; margin-top: 4px; font-weight: 400; font-size: 12.5px; color: var(--muted); }
+  .imp .tipo { display: inline-flex; align-items: center; gap: 7px; font: 650 12px/1 var(--sans); color: var(--ink); }
+  .imp .tipo i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+  .imp .tipo.k-e i { background: var(--c-prop); }
+  .imp .tipo.k-r i { background: var(--c-rev); }
+  .imp .tipo.k-a i { background: transparent; border: 2px solid var(--c-rev); }
+  .imp .que { margin-top: 6px; font: 400 14px/1.45 var(--serif); color: var(--ink-2); max-width: 36ch; }
+  .imp .nota { font: 500 14.5px/1.4 var(--sans); color: var(--ink); max-width: 44ch; }
+  .imp .meta { display: block; margin-top: 4px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp td.res { min-width: 10em; max-width: 13em; }
+  .imp td.res .big { display: block; font: 700 18px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .imp td.res small { display: block; margin-top: 3px; font: 400 12.5px/1.35 var(--sans); color: var(--muted); }
+  .imp .t-prop td:nth-child(2) { min-width: 14em; }
+  .imp .rel { display: inline-flex; align-items: center; font: 650 12.5px/1 var(--sans); padding: 6px 10px; border-radius: 999px; white-space: nowrap; }
+  .imp .rel.hi { color: var(--good); background: var(--good-bg); }
+  .imp .rel.up { color: var(--good); background: transparent; border: 1.5px solid var(--good); }
+  .imp .rel.eq { color: var(--ink-2); background: var(--neutral-bg); }
+  .imp .rel.lo { color: var(--bad); background: var(--bad-bg); }
+  .imp .rel.na { color: var(--muted); background: transparent; border: 1px dashed var(--rule-strong); }
+
+  .imp .compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .imp .compare > div { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 8px; align-content: start; }
+  .imp .compare h3 { margin: 0; font: 650 12px/1.2 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .imp .vs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font-family: var(--sans); }
+  .imp .vs .a { font: 700 34px/1 var(--sans); color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+  .imp .vs .b { font: 700 34px/1 var(--sans); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .imp .vs span { font: 400 13.5px/1.35 var(--sans); color: var(--muted); }
+  .imp .compare p { font-size: 15.5px; color: var(--ink-2); }
+  .imp blockquote { margin: 26px 0 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--accent); max-width: 60ch; }
+  .imp blockquote p { font: italic 400 20px/1.45 var(--serif); color: var(--ink); }
+  .imp blockquote footer { margin-top: 6px; font: 400 13px/1.4 var(--sans); color: var(--muted); }
+
+  .imp .caveats { margin: 0; padding-left: 18px; display: grid; gap: 10px; max-width: 80ch; }
+  .imp .caveats li { font-size: 15.5px; line-height: 1.55; color: var(--ink-2); }
+  .imp .caveats li::marker { color: var(--muted); }
+
+
+  @media (max-width: 820px) {
+    .imp .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .imp .compare { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .imp .t-prop, .imp .t-prop tbody { display: block; min-width: 0; }
+    .imp .t-prop thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .imp .t-prop tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+    .imp .t-prop tbody td { display: block; padding: 0; border: 0; }
+    .imp .t-prop td.when { grid-column: 1 / -1; display: flex; gap: 8px; align-items: baseline; }
+    .imp .t-prop td.when small { display: inline; margin: 0; }
+    .imp .t-prop td:nth-child(2), .imp .t-prop td:nth-child(3) { grid-column: 1 / -1; }
+    .imp .t-prop .que, .imp .t-prop .nota { max-width: none; }
+  }
+  .imp .tiles { margin: 4px 0 30px; }
+  .imp tbody th, .imp tbody td { vertical-align: top; }
+  .imp .t-prop td.when, .imp .t-prop td.when small { text-transform: none; letter-spacing: 0; }
+  .imp blockquote footer { border: 0; padding: 0; display: block; }
+  .imp .legend .k-ref { width: 1px; height: 16px; background: var(--ink); border-radius: 0; }
+  .imp .nb { margin: 0 0 30px; }
+  .imp .nb-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .imp .nb-row { display: grid; grid-template-columns: minmax(0, 17em) minmax(0, 1fr) 9.5em; gap: 6px 16px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .imp .nb-lab { font: 600 14px/1.3 var(--sans); color: var(--ink); }
+  .imp .nb-lab small { display: block; margin-top: 2px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp .nb .bar { height: 16px; }
+  .imp .nb .bar .fill.k-e { background: var(--c-prop); }
+  .imp .nb .bar .fill.k-r { background: var(--c-rev); }
+  .imp .nb-val { font: 700 15px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); text-align: right; white-space: nowrap; }
+  .imp .nb-val small { display: block; margin-top: 2px; font: 400 12px/1.3 var(--sans); color: var(--muted); }
+  .imp .nb figcaption { margin-top: 10px; }
+  .imp .t-sem { min-width: 560px; }
+  .imp .t-vida { min-width: 640px; }
+  .imp .t-vida thead th.num { white-space: normal; }
+  .imp .t-vida tbody th { font: 500 14px/1.35 var(--sans); color: var(--ink); max-width: 30em; }
+  .imp .t-vida tbody th small { display: block; margin-top: 3px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp .t-vida td small { color: var(--muted); font-size: 12.5px; }
+  .imp .t-vida tr.top th, .imp .t-vida tr.top td { background: var(--accent-track); }
+  .imp .legend .k-a { background: transparent; border: 2px solid var(--c-rev); box-sizing: border-box; }
+  .imp .nb .bar .fill.k-a { background: transparent; border: 2px solid var(--c-rev); box-sizing: border-box; }
+  .imp .t-sem thead th.num { white-space: normal; }
+  .imp .t-sem tbody th { white-space: nowrap; }
+  .imp .t-sem tr.top th, .imp .t-sem tr.top td { font-weight: 650; color: var(--ink); background: var(--accent-track); }
+  .parte { margin: clamp(52px, 7vw, 80px) 0 0; padding-top: 12px; border-top: 4px solid var(--ink); display: flex; align-items: center; gap: 10px; font: 700 13px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); max-width: none; }
+  .parte span { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--bar-bg); font-size: 12.5px; letter-spacing: 0; }
+  .parte + section, .parte + .imp > section:first-child { margin-top: 28px; }
+  @media (max-width: 640px) {
+    .imp .nb-row { grid-template-columns: minmax(0, 1fr) auto; }
+    .imp .nb-lab { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+<div class="bl-bar"><div class="bl-bar-in">
+  <div class="bl-top"><span class="bl-mark">Bloomberg <span>Línea</span></span><span class="bl-tag">Uso interno · SEO</span></div>
+  <nav class="bl-nav" aria-label="Secciones">
+    <a href="#s-guia">Guía</a><a href="#s-impacto">Impacto</a><a href="#s-foto">La foto</a>
+    <a href="#s-temas">Temas</a><a href="#s-titulares">Titulares</a><a href="#s-mes">Reparto</a>
+    <a href="#s-cal">Calendario</a><a href="#s-ever">Vida larga</a><a href="#s-gsc">Búsquedas</a>
+    <a href="#s-stop">Qué dejar</a>
+  </nav>
+</div></div>
+<main class="page">
+<header class="mast">
+  <p class="kicker">Guía de SEO · Venezuela</p>
+  <h1>Qué rinde en las notas de Raylí Luján</h1>
+  <p class="lede">Todo lo que sigue sale de sus notas publicadas, de sus vistas en GA4 y de sus clics de Discover y de
+  búsqueda en Search Console, entre el 20 de julio de 2026 y el 20 de septiembre de 2026. No hay opiniones sobre titulares: hay lo que pasó con
+  los suyos.</p>
+  <p class="byline">986 notas firmadas · 54 publicadas en esta ventana · 6.9 por semana ·
+  35.404 vistas en el periodo</p>
+</header>
+
+<p class="parte"><span>1</span>La guía de la semana</p>
+<section aria-labelledby="s-guia">
+  <div class="sec-head">
+    <p class="eyebrow">Hoja de ruta · semana del 20 de septiembre</p>
+    <h2 id="s-guia">Lo que aplicamos desde ya</h2>
+    <p>Lo que funciona y lo que no en sus notas. Se actualiza cada lunes con los datos de la semana: lo que deja de
+    rendir sale de aquí.</p>
+  </div>
+  <div class="plan">
+    <div><h3><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Titula así</span></h3><ul><li><b>Pregunta o «de cuánto» al inicio</b>: mediana de 802 vistas contra 173 sin ella (5 de sus 54 notas). La mejor con esa pieza: «De cuánto fue el temblor hoy, 18 de agosto, en Venezuela:…» (1.302).</li><li><b>Nombra una empresa o institución</b>: mediana de 314 vistas contra 165 sin ella (8 de sus 54 notas). La mejor con esa pieza: «Liberty Mutual obtiene un laudo de más de US$1.500 millones…» (2.604).</li><li><b>«Venezuela» en el titular</b>: mediana de 185 vistas contra 153 sin ella (47 de sus 54 notas). La mejor con esa pieza: «Liberty Mutual obtiene un laudo de más de US$1.500 millones…» (2.604).</li><li><b>Con cifra, monto o porcentaje</b>: mediana de 196 vistas contra 174 sin ella (13 de sus 54 notas). La mejor con esa pieza: «Liberty Mutual obtiene un laudo de más de US$1.500 millones…» (2.604).</li><li><b>Entre 95–130 caracteres</b>: mediana de 240 vistas en 17 notas, la franja que mejor le rinde.</li></ul></div>
+    <div><h3><span class="chip flat"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 4h10v2H0z"/></svg>Antes de publicar</span></h3><ul><li><b>¿Esto se busca?</b> Si el tema tiene consulta en Google, el titular tiene que llevar la palabra que la gente escribe. De sus 200 notas con tráfico, solo 116 traen más búsqueda que Discover.</li><li><b>¿El titular se entiende sin leer la nota?</b> En Discover no hay búsqueda previa: es lo único que ve el lector. Sus tres mejores de Discover suman 5.741 clics.</li><li><b>¿Está la cifra y está la fuente?</b> Son las dos piezas que más suben la mediana en su corpus.</li><li><b>¿Hay otra nota suya del mismo tema esta semana?</b> Publica 6.9 notas por semana: el segundo ángulo del mismo tema se come al primero.</li></ul></div>
+    <div><h3><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Sube</span></h3><ul><li><b>Empresas y capital que llega</b>: mediana de 179 vistas en 21 notas.</li><li><b>Terremotos y reconstrucción</b>: mediana de 176 vistas en 22 notas.</li><li><b>Deuda, laudos y activos</b>: mediana de 156 vistas en 8 notas.</li></ul></div>
+    <div><h3><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Baja</span></h3><ul><li><b>Petróleo y acuerdos con EE.UU.</b>: 25 notas y mediana de 7 vistas.</li><li><b>Macro: inflación, dólar y salario</b>: 26 notas y mediana de 4 vistas.</li><li><b>Política y negociaciones</b>: 33 notas y mediana de 2 vistas.</li></ul></div>
+  </div>
+  <div class="semana"><h3>Tres temas para preparar esta semana</h3><ul><li><b>«binance card venezuela»</b>: 6.696 impresiones en cuatro semanas, 9 clics y posición 7,7. La demanda ya está; falta la nota que la responda en el titular.</li><li><b>«petróleos de venezuela»</b>: 4.185 impresiones en cuatro semanas, 28 clics y posición 6,8. La demanda ya está; falta la nota que la responda en el titular.</li><li><b>«totalenergies»</b>: 3.556 impresiones en cuatro semanas, 35 clics y posición 3,1. La demanda ya está; falta la nota que la responda en el titular.</li></ul></div>
+  <div class="probar"><h3>A probar en las próximas semanas</h3><ul><li><b>Un titular de búsqueda para un tema de negocio.</b> Su negocio vive de Discover (41% de sus clics de Google). Probar una nota de empresa con la palabra buscada al principio y medir si aparece en búsqueda.</li><li><b>Menos política y negociaciones.</b> Son 33 notas con mediana de 2 vistas. Bajar a la mitad y mover ese tiempo a servicio y bolsillo, que tiene mediana de 323.</li></ul></div>
+</section>
+
+<p class="parte"><span>2</span>El impacto de SEO en su trabajo</p>
+<section aria-labelledby="s-impacto">
+  <div class="sec-head">
+    <p class="eyebrow">Impacto</p>
+    <h2 id="s-impacto">2 de 4 notas con SEO rindieron más que la típica de sus días</h2>
+    <p>Cada propuesta de SEO que terminó publicada, con lo que se propuso y lo que hizo la nota en sus primeros siete
+    días frente a la mediana de sus otras notas publicadas tres días antes o después. Fuente: #cendesk-general.</p>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>Nota y qué propuso SEO</th><th>Fecha</th><th>Cómo salió</th><th>Vistas en 7 días</th><th>La típica</th><th></th></tr></thead><tbody><tr><td>Desde la inflación en Perú a la OPI de Shein: esta es la…<span class="how">Cambiar «Agenda económica de la semana: producción industrial en Chile, inflación en Perú y la OPI de Shein» por «Desde la inflación en Perú a la OPI de Shein: esta fue la agenda económica de la semana».</span></td><td>30 ago</td><td>Tal cual</td><td><div class="barline"><div class="bar" title="153 vistas" style="--w:26.5%;--mid:36.2%"><span class="fill"></span><span class='mid'></span></div><span class="val">153</span></div></td><td>209</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Por debajo</span></td></tr><tr><td>Estos son los ejecutivos que llevarán la nueva estrategia…<span class="how">Sacar una nota aparte de la firma del acuerdo: «Los CEO petroleros que llevarán la estrategia en Venezuela». La nota no existía: nació de la propuesta.</span></td><td>02 sep</td><td>Ajustado</td><td><div class="barline"><div class="bar" title="578 vistas" style="--w:100.0%;--mid:27.6%"><span class="fill"></span><span class='mid'></span></div><span class="val">578</span></div></td><td>160</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Sobre la típica</span></td></tr><tr><td>Delcy Rodríguez y Trump abordan la posibilidad de nuevas…<span class="how">Por palabras clave: «Habrán nuevas elecciones en Venezuela, según Trump y Delcy Rodríguez», o el suyo sin la fecha, para dejar el elemento de clic al principio.</span></td><td>02 sep</td><td>Ajustado</td><td><div class="barline"><div class="bar" title="166 vistas" style="--w:28.7%;--mid:34.0%"><span class="fill"></span><span class='mid'></span></div><span class="val">166</span></div></td><td>197</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Por debajo</span></td></tr><tr><td>Machado cuestiona el acuerdo petrolero con EE.UU. y Delcy…<span class="how">«María Corina Machado contra Delcy Rodríguez por transparencia en acuerdo petrolero de EE.UU. con Venezuela».</span></td><td>03 sep</td><td>Ajustado</td><td><div class="barline"><div class="bar" title="330 vistas" style="--w:57.1%;--mid:28.7%"><span class="fill"></span><span class='mid'></span></div><span class="val">330</span></div></td><td>166</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Sobre la típica</span></td></tr><tr><td>Venezuela avanza hacia una mayor libertad de expresión, pero…<span class="how">Cuatro arreglos de formato: sumar embebidos o gráficas, partir los párrafos de seis líneas en tres, opciones de H2 y al menos seis enlaces «ver más» por la extensión del texto.</span></td><td>17 sep</td><td>Tal cual</td><td><div class="barline"><div class="bar" title="102 vistas" style="--w:17.6%"><span class="fill"></span></div><span class="val">102</span></div></td><td>—</td><td><span class="chip flat"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 4h10v2H0z"/></svg>Sin comparación</span></td></tr></tbody></table></div>
+  <p class="nota"><b>El mejor caso es una nota que no existía.</b> «Estos son los ejecutivos que llevarán la nueva estrategia energética…» nació de
+  una propuesta de SEO —sacar del acuerdo petrolero una nota aparte con los ejecutivos— y
+  hizo 578 vistas contra una típica de 160,
+  con 349 clics de búsqueda.</p>
+</section>
+
+<section>
+  <div class="sec-head"><p class="eyebrow">Lo que no se aplicó</p><h2>Lo que propuso SEO y no salió</h2>
+  <p>Se guardan porque sirven para ver qué no convence y por qué.</p></div>
+  <div class="table-wrap"><table><thead><tr><th>Nota</th><th>Fecha</th><th>Qué propuso SEO</th><th>Por qué no</th><th>Vistas 7 días</th></tr></thead><tbody><tr><td>Venezuela alcanza una alta adopción cripto, pero sigue…</td><td>01 sep</td><td>«Cripto en Venezuela: por qué tener USDT no es lo mismo que tener dólares disponibles» o «La paradoja del dóla</td><td>Ella respondió que ninguno de los títulos iba con el foco de la nota.</td><td>0</td></tr><tr><td>ONU advierte que aparato represivo de Venezuela sigue…</td><td>16 sep</td><td>«Alerta para Delcy Rodríguez: ONU advierte que aparato represivo de Venezuela sigue intacto».</td><td>La editora prefirió dejarlo como estaba por lo delicado del tema.</td><td>130</td></tr><tr><td>Casa212 apuesta por movilizar US$1,2 millones por cohorte…</td><td>17 sep</td><td>«Las siete startups venezolanas en las que Casa212 invertirá US$1,05 millones».</td><td>Se publicó con el titular de ella: todavía no se sabían cuáles eran las siete startups.</td><td>666</td></tr></tbody></table></div>
+  <p class="nota">Una de ellas, Casa212, se publicó con el titular de ella y rindió bien: la propuesta de SEO no
+  siempre gana, y eso también es un dato.</p>
+</section>
+
+<section>
+  <div class="sec-head"><p class="eyebrow">Advertencia</p><h2>Qué muestran y qué no estas cifras</h2></div>
+  <ul class="caveats">
+    <li>Son 6 intervenciones aplicadas y 3 rechazadas entre el 28 de agosto y el 23 de
+    septiembre. Es poco para concluir: sirve para empezar la bitácora, no para cerrar un juicio.</li>
+    <li><b>Un caso queda fuera y conviene decirlo:</b> el 11 de agosto SEO propuso llevar a servicio una nota suya
+    («Así quedaron los nuevos horarios en entidades públicas de Venezuela»), ella aceptó, y la nota hizo 1.310 clics
+    de búsqueda con 23.489 impresiones. Pero tras el take-over que pidió la editora la firma quedó en otra persona
+    y la nota no está en su feed de autor, así que no se le atribuye.</li>
+    <li>La típica de sus días es la mediana de sus otras notas publicadas tres días antes o después. Si en esa
+    franja publicó poco, la comparación es frágil.</li>
+  </ul>
+</section>
+
+<p class="parte"><span>3</span>Los datos detrás de la guía</p>
+<section aria-labelledby="s-foto">
+  <div class="sec-head">
+    <p class="eyebrow">La foto</p>
+    <h2 id="s-foto">Un tercio del Discover de la sección y casi nada de su búsqueda</h2>
+    <p>En Venezuela, Google reparte muy distinto de como reparte en el resto del sitio, y ella no está donde está
+    el volumen.</p>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>Canal</th><th>Toda la sección</th><th>De ella</th><th>Su parte</th></tr></thead><tbody><tr><td>Vistas (GA4)</td><td>131.629</td><td>35.404</td><td>27%</td></tr><tr><td>Clics de Discover</td><td>22.355</td><td>7.363</td><td><b>33%</b></td></tr><tr><td>Clics de búsqueda</td><td>82.709</td><td>10.411</td><td><b>13%</b></td></tr></tbody></table></div>
+  <div class="plan">
+    <div><h3><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Le funciona</span></h3><ul><li><b>Liberty Mutual obtiene un laudo de más de US$1.500 millones…</b>: 2.661 clics de Discover y 87 de búsqueda.</li><li><b>Venezuela busca devolver activos expropiados para atraer…</b>: 2.002 clics de Discover y 194 de búsqueda.</li><li><b>Una nueva generación de talento venezolano se prepara para un…</b>: 1.078 clics de Discover y 33 de búsqueda.</li></ul></div>
+    <div><h3><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>No le funciona</span></h3><ul><li><b>Venezuela alcanza una alta adopción cripto, pero sigue rezagada…</b>: 0 vistas en siete días.</li><li><b>Venezuela Reporta: qué es, cómo funciona y por qué ha sido…</b>: 48 vistas en siete días.</li><li><b>Chavismo y oposición venezolana acuerdan renovar el TSJ en…</b>: 49 vistas en siete días.</li></ul></div>
+  </div>
+  <p class="nota">Es una cuarta parte de las vistas de la sección y un tercio de su Discover, pero solo un
+  13% de sus clics de búsqueda. Ahí está el espacio que no ocupa.</p>
+</section>
+
+<section aria-labelledby="s-canales">
+  <div class="sec-head">
+    <p class="eyebrow">De dónde llega</p>
+    <h2 id="s-canales">Cuánto de lo suyo es SEO</h2>
+    <p>Por dónde entró cada visita a sus notas, comparado con el reparto de toda la sección.</p>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>Canal</th><th>Vistas de ella</th><th>Su reparto</th><th>La sección</th><th>Diferencia</th></tr></thead><tbody><tr><td>Búsqueda orgánica</td><td><div class="barline"><div class="bar" title="12.895 vistas" style="--w:100.0%"><span class="fill"></span></div><span class="val">12.895</span></div></td><td><b>39%</b></td><td>52%</td><td>-13 pp</td></tr><tr><td>Directo</td><td><div class="barline"><div class="bar" title="11.041 vistas" style="--w:85.6%"><span class="fill"></span></div><span class="val">11.041</span></div></td><td><b>34%</b></td><td>32%</td><td>+2 pp</td></tr><tr><td>Referidos</td><td><div class="barline"><div class="bar" title="6.327 vistas" style="--w:49.1%"><span class="fill"></span></div><span class="val">6.327</span></div></td><td><b>19%</b></td><td>11%</td><td>+8 pp</td></tr><tr><td>Correo y push</td><td><div class="barline"><div class="bar" title="1.778 vistas" style="--w:13.8%"><span class="fill"></span></div><span class="val">1.778</span></div></td><td><b>5%</b></td><td>3%</td><td>+2 pp</td></tr><tr><td>Redes</td><td><div class="barline"><div class="bar" title="350 vistas" style="--w:2.7%"><span class="fill"></span></div><span class="val">350</span></div></td><td><b>1%</b></td><td>1%</td><td>+0 pp</td></tr><tr><td>Otros</td><td><div class="barline"><div class="bar" title="407 vistas" style="--w:3.2%"><span class="fill"></span></div><span class="val">407</span></div></td><td><b>1%</b></td><td>1%</td><td>-0 pp</td></tr></tbody></table></div>
+  <p class="nota"><b>El SEO pesa menos en su trabajo que en el resto de la sección: 39% contra 52%.</b> Lo que le sobra es tráfico de referidos (19% contra 11%), que son enlaces desde otras páginas del sitio y desde fuera: depende de que alguien la enlace, no de que alguien la busque. Cobertura de la medición: 129.672 de 131.632 vistas del filtro (98,5%); 2 páginas de 1.000 filas.</p>
+</section>
+
+<section aria-labelledby="s-temas">
+  <div class="sec-head">
+    <p class="eyebrow">Temas</p>
+    <h2 id="s-temas">Dónde rinde cada nota</h2>
+    <p>Sus 200 notas con tráfico en la ventana, por lo que tratan. La mediana es por nota: dice cuánto rinde
+    una nota típica de ese tema, no cuánto suma el tema entero.</p>
+  </div>
+  <div class="table-wrap"><table class="t-topics"><thead><tr><th>Tema</th><th>Notas</th><th>Mediana por nota</th><th>Vistas</th><th>Canal</th><th>Qué hacer</th></tr></thead><tbody><tr><th scope="row">Servicio y bolsillo<span class="how">«Regreso a clases en Venezuela será el 14 de…» (577); «Cómo iniciar la vida financiera en…» (68)</span></th><td class="num">2</td><td><div class="barline"><div class="bar" title="Servicio y bolsillo: mediana de 323 vistas" style="--w:100.0%"><span class="fill"></span></div><span class="val">323</span></div></td><td class="num">645</td><td class="chan">Búsqueda</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr><tr><th scope="row">Empresas y capital que llega<span class="how">«Proyecto privado busca crear un campus de…» (1.271); «Binance despliega su tarjeta en Venezuela…» (1.126)</span></th><td class="num">21</td><td><div class="barline"><div class="bar" title="Empresas y capital que llega: mediana de 179 vistas" style="--w:55.5%"><span class="fill"></span></div><span class="val">179</span></div></td><td class="num">6.399</td><td class="chan">Búsqueda</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr><tr><th scope="row">Terremotos y reconstrucción<span class="how">«A un mes del doble terremoto en Venezuela,…» (1.767); «De cuánto fue el temblor hoy, 18 de agosto,…» (1.307)</span></th><td class="num">22</td><td><div class="barline"><div class="bar" title="Terremotos y reconstrucción: mediana de 176 vistas" style="--w:54.6%"><span class="fill"></span></div><span class="val">176</span></div></td><td class="num">6.550</td><td class="chan">Búsqueda</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr><tr><th scope="row">Deuda, laudos y activos<span class="how">«Liberty Mutual obtiene un laudo de más de…» (2.709); «Venezuela busca devolver activos…» (2.592)</span></th><td class="num">8</td><td><div class="barline"><div class="bar" title="Deuda, laudos y activos: mediana de 156 vistas" style="--w:48.4%"><span class="fill"></span></div><span class="val">156</span></div></td><td class="num">6.378</td><td class="chan">Discover</td><td><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Subir</span></td></tr><tr><th scope="row">Petróleo y acuerdos con EE.UU.<span class="how">«Trump anuncia acuerdo con Venezuela para…» (1.458); «Quién es Alejandro Betancourt, el…» (852)</span></th><td class="num">25</td><td><div class="barline"><div class="bar" title="Petróleo y acuerdos con EE.UU.: mediana de 7 vistas" style="--w:2.2%"><span class="fill"></span></div><span class="val">7</span></div></td><td class="num">4.693</td><td class="chan">Búsqueda</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr><tr><th scope="row">Macro: inflación, dólar y salario<span class="how">«Quién es Steve Hanke, el experto que…» (1.020); «¿Qué le espera a la economía venezolana en…» (622)</span></th><td class="num">26</td><td><div class="barline"><div class="bar" title="Macro: inflación, dólar y salario: mediana de 4 vistas" style="--w:1.2%"><span class="fill"></span></div><span class="val">4</span></div></td><td class="num">3.862</td><td class="chan">Búsqueda</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr><tr><th scope="row">Otros<span class="how">«Una nueva generación de talento venezolano…» (1.819); «Hantavirus en Venezuela: qué se sabe de los…» (790)</span></th><td class="num">63</td><td><div class="barline"><div class="bar" title="Otros: mediana de 4 vistas" style="--w:1.2%"><span class="fill"></span></div><span class="val">4</span></div></td><td class="num">5.119</td><td class="chan">Búsqueda</td><td><span class="chip flat"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 4h10v2H0z"/></svg>Sostener</span></td></tr><tr><th scope="row">Política y negociaciones<span class="how">«EE.UU. asegura que habrá elecciones en…» (374); «Las claves de la nueva negociación…» (200)</span></th><td class="num">33</td><td><div class="barline"><div class="bar" title="Política y negociaciones: mediana de 2 vistas" style="--w:0.6%"><span class="fill"></span></div><span class="val">2</span></div></td><td class="num">1.756</td><td class="chan">Búsqueda</td><td><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Bajar</span></td></tr></tbody></table></div>
+  <p class="nota"><b>Los dos temas en los que más publica son los que menos rinden por nota.</b>
+  Política y negociaciones: 33 notas, mediana de 2 vistas.
+  Otros: 63 notas, mediana de 4. Juntos,
+  96 de sus 200 notas.</p>
+</section>
+
+<section aria-labelledby="s-titulares">
+  <div class="sec-head">
+    <p class="eyebrow">Titulares</p>
+    <h2 id="s-titulares">Las piezas que cambian el resultado</h2>
+    <p>Medido sobre sus 54 notas de la ventana: la mediana de vistas de las que llevan cada pieza contra
+    las que no.</p>
+  </div>
+  <div class="table-wrap"><table class="t-hooks"><thead><tr><th>Pieza del titular</th><th>Notas con ella</th><th>Mediana con la pieza</th><th>Mediana sin ella</th></tr></thead><tbody><tr><th scope="row">Pregunta o «de cuánto» al inicio<span class="how">Su mejor ejemplo: «De cuánto fue el temblor hoy, 18 de agosto, en Venezuela:…» (1.302 vistas)</span></th><td class="num">5</td><td><div class="barline"><div class="bar" title="con la pieza: mediana de 802" style="--w:100.0%;--mid:21.6%"><span class="fill"></span><span class='mid'></span></div><span class="val">802</span></div></td><td class="num">173</td></tr><tr><th scope="row">Nombra una empresa o institución<span class="how">Su mejor ejemplo: «Liberty Mutual obtiene un laudo de más de US$1.500 millones…» (2.604 vistas)</span></th><td class="num">8</td><td><div class="barline"><div class="bar" title="con la pieza: mediana de 314" style="--w:39.1%;--mid:20.6%"><span class="fill"></span><span class='mid'></span></div><span class="val">314</span></div></td><td class="num">165</td></tr><tr><th scope="row">«Venezuela» en el titular<span class="how">Su mejor ejemplo: «Liberty Mutual obtiene un laudo de más de US$1.500 millones…» (2.604 vistas)</span></th><td class="num">47</td><td><div class="barline"><div class="bar" title="con la pieza: mediana de 185" style="--w:23.1%;--mid:19.1%"><span class="fill"></span><span class='mid'></span></div><span class="val">185</span></div></td><td class="num">153</td></tr><tr><th scope="row">Con cifra, monto o porcentaje<span class="how">Su mejor ejemplo: «Liberty Mutual obtiene un laudo de más de US$1.500 millones…» (2.604 vistas)</span></th><td class="num">13</td><td><div class="barline"><div class="bar" title="con la pieza: mediana de 196" style="--w:24.4%;--mid:21.7%"><span class="fill"></span><span class='mid'></span></div><span class="val">196</span></div></td><td class="num">174</td></tr><tr><th scope="row">Dos puntos en la cabeza<span class="how">Su mejor ejemplo: «Hantavirus en Venezuela: qué se sabe de los casos confirmados…» (690 vistas)</span></th><td class="num">7</td><td><div class="barline"><div class="bar" title="con la pieza: mediana de 153" style="--w:19.1%;--mid:23.1%"><span class="fill"></span><span class='mid'></span></div><span class="val">153</span></div></td><td class="num">185</td></tr></tbody></table></div>
+  <h3>Las fórmulas que ya le funcionaron</h3>
+  <div class="molds"><div class="mold"><h3>El reclamo con monto</h3><p class="formula">Quién le reclama cuánto a Venezuela, con la cifra en el titular.</p><p class="ev">«Liberty Mutual obtiene un laudo de más de US$1.500 millones contra…» — 2.709 vistas, 2.661 de Discover y 87 de búsqueda. 3 notas suyas con esta forma, mediana de 2.592.</p></div><div class="mold"><h3>La empresa que llega, con el número</h3><p class="formula">Nombre de la empresa, qué trae y cuánto pone.</p><p class="ev">«Liberty Mutual obtiene un laudo de más de US$1.500 millones contra…» — 2.709 vistas, 2.661 de Discover y 87 de búsqueda. 12 notas suyas con esta forma, mediana de 536.</p></div><div class="mold"><h3>El dato del sismo, con fecha y hora</h3><p class="formula">Magnitud, epicentro y hora. Es lo único suyo que la gente busca el mismo día.</p><p class="ev">«De cuánto fue el temblor hoy, 18 de agosto, en Venezuela: magnitud,…» — 1.307 vistas, 0 de Discover y 320 de búsqueda. 3 notas suyas con esta forma, mediana de 379.</p></div><div class="mold"><h3>Quién es</h3><p class="formula">El perfil del personaje que acaba de aparecer en la noticia.</p><p class="ev">«Quién es Steve Hanke, el experto que analizará los escenarios para…» — 1.020 vistas, 44 de Discover y 514 de búsqueda. 2 notas suyas con esta forma, mediana de 936.</p></div><div class="mold"><h3>Cuánto cuesta en Venezuela</h3><p class="formula">El precio local de algo que ya tiene demanda propia.</p><p class="ev">«iPhone 18 Pro Max en Venezuela: cuánto costaría con impuestos y precio del…» — 490 vistas, 30 de Discover y 390 de búsqueda. 5 notas suyas con esta forma, mediana de 251.</p></div></div>
+  <div class="table-wrap"><table><thead><tr><th>Largo del titular</th><th>Notas</th><th>Mediana</th></tr></thead><tbody><tr><td>60–79</td><td>5</td><td>137</td></tr><tr><td>80–94</td><td>31</td><td>166</td></tr><tr><td>95–130</td><td>17</td><td>240</td></tr></tbody></table></div>
+</section>
+
+<section aria-labelledby="s-linea">
+  <div class="sec-head">
+    <p class="eyebrow">La línea diaria</p>
+    <h2 id="s-linea">Sus vistas, día a día, desde el 20 de julio</h2>
+    <p>Cada punto es un día. Los tres picos señalados son las notas que los explican.</p>
+  </div>
+  <div class="imp"><div class="chart-card"><div id="chart"><svg viewBox="0 0 980 260" role="img" aria-label="Vistas diarias"><line x1="46" x2="968" y1="234.0" y2="234.0" stroke="currentColor" stroke-opacity=".12"/><text class="tick" x="38" y="238.0" text-anchor="end">0</text><line x1="46" x2="968" y1="124.0" y2="124.0" stroke="currentColor" stroke-opacity=".12"/><text class="tick" x="38" y="128.0" text-anchor="end">1.048</text><line x1="46" x2="968" y1="14.0" y2="14.0" stroke="currentColor" stroke-opacity=".12"/><text class="tick" x="38" y="18.0" text-anchor="end">2.096</text><path d="M46.0,234.0 L46.0,219.0 L60.9,209.8 L75.7,205.1 L90.6,166.9 L105.5,197.9 L120.4,215.9 L135.2,223.1 L150.1,183.1 L165.0,155.6 L179.8,168.5 L194.7,187.6 L209.6,208.7 L224.5,221.4 L239.3,227.2 L254.2,226.4 L269.1,225.5 L283.9,192.3 L298.8,134.8 L313.7,158.2 L328.5,148.8 L343.4,38.1 L358.3,197.9 L373.2,187.3 L388.0,173.1 L402.9,191.1 L417.8,129.5 L432.6,173.5 L447.5,195.6 L462.4,214.3 L477.3,109.5 L492.1,61.9 L507.0,202.5 L521.9,134.0 L536.7,203.5 L551.6,219.5 L566.5,183.5 L581.4,200.8 L596.2,215.8 L611.1,14.0 L626.0,91.6 L640.8,142.5 L655.7,203.8 L670.6,179.8 L685.5,188.9 L700.3,127.3 L715.2,148.7 L730.1,197.9 L744.9,191.6 L759.8,188.2 L774.7,177.4 L789.5,144.9 L804.4,180.5 L819.3,139.5 L834.2,138.3 L849.0,202.4 L863.9,199.4 L878.8,185.9 L893.6,176.3 L908.5,180.0 L923.4,188.6 L938.3,143.8 L953.1,201.1 L968.0,186.3 L968.0,234.0 Z" fill="currentColor" fill-opacity=".07"/><polyline points="46.0,219.0 60.9,209.8 75.7,205.1 90.6,166.9 105.5,197.9 120.4,215.9 135.2,223.1 150.1,183.1 165.0,155.6 179.8,168.5 194.7,187.6 209.6,208.7 224.5,221.4 239.3,227.2 254.2,226.4 269.1,225.5 283.9,192.3 298.8,134.8 313.7,158.2 328.5,148.8 343.4,38.1 358.3,197.9 373.2,187.3 388.0,173.1 402.9,191.1 417.8,129.5 432.6,173.5 447.5,195.6 462.4,214.3 477.3,109.5 492.1,61.9 507.0,202.5 521.9,134.0 536.7,203.5 551.6,219.5 566.5,183.5 581.4,200.8 596.2,215.8 611.1,14.0 626.0,91.6 640.8,142.5 655.7,203.8 670.6,179.8 685.5,188.9 700.3,127.3 715.2,148.7 730.1,197.9 744.9,191.6 759.8,188.2 774.7,177.4 789.5,144.9 804.4,180.5 819.3,139.5 834.2,138.3 849.0,202.4 863.9,199.4 878.8,185.9 893.6,176.3 908.5,180.0 923.4,188.6 938.3,143.8 953.1,201.1 968.0,186.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><text class="tick" x="46.0" y="252" text-anchor="middle">20 jul</text><text class="tick" x="224.5" y="252" text-anchor="middle">1 ago</text><text class="tick" x="432.6" y="252" text-anchor="middle">15 ago</text><text class="tick" x="685.5" y="252" text-anchor="middle">1 sep</text><text class="tick" x="893.6" y="252" text-anchor="middle">15 sep</text><circle cx="611.1" cy="14.0" r="3.5" fill="currentColor"/><text class="evnum" x="611.1" y="5.0" text-anchor="middle">2.096</text><circle cx="343.4" cy="38.1" r="3.5" fill="currentColor"/><text class="evnum" x="343.4" y="29.1" text-anchor="middle">1.866</text><circle cx="492.1" cy="61.9" r="3.5" fill="currentColor"/><text class="evnum" x="492.1" y="52.9" text-anchor="middle">1.640</text></svg></div></div></div>
+  <p class="nota">Su día más alto fue el 27 de agosto, con 2.096 vistas, y lo explica «Venezuela busca devolver activos expropiados para atraer inversión,…». La mediana diaria es de 445 vistas: el trabajo vive de picos, no de piso.</p>
+</section>
+
+<section aria-labelledby="s-mes">
+  <div class="sec-head">
+    <p class="eyebrow">Reparto</p>
+    <h2 id="s-mes">El mismo volumen, mejor repartido</h2>
+    <p>No se trata de publicar más: se trata de mover las notas de donde no rinden a donde sí. Con sus
+    6.9 notas por semana:</p>
+  </div>
+  <div class="plan">
+    <div><h3><span class="chip down"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 1h10L5 9z"/></svg>Menos</span></h3><ul><li><b>Petróleo y acuerdos con EE.UU.</b>: hoy 25 notas con mediana de 7 vistas.</li><li><b>Macro: inflación, dólar y salario</b>: hoy 26 notas con mediana de 4 vistas.</li><li><b>Política y negociaciones</b>: hoy 33 notas con mediana de 2 vistas.</li></ul></div>
+    <div><h3><span class="chip up"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 9h10L5 1z"/></svg>Más</span></h3><ul><li><b>Empresas y capital que llega</b>: mediana de 179 vistas, y solo 21 notas.</li><li><b>Terremotos y reconstrucción</b>: mediana de 176 vistas, y solo 22 notas.</li><li><b>Deuda, laudos y activos</b>: mediana de 156 vistas, y solo 8 notas.</li></ul></div>
+  </div>
+</section>
+
+<section aria-labelledby="s-cal">
+  <div class="sec-head">
+    <p class="eyebrow">Calendario</p>
+    <h2 id="s-cal">Hasta enero de 2027</h2>
+    <p>Temas con fecha conocida que en su sección ya tienen demanda. No son una predicción: son citas del calendario
+    que conviene tener escritas antes, no el mismo día.</p>
+  </div>
+  <div class="cal"><div class="ev"><p class="when">Finales de octubre</p><h3>Resultados de Chevron y el primer balance del acuerdo petrolero</h3><p class="que">«chevron» y «petróleos de venezuela»: 3.254 impresiones en cuatro semanas</p></div><div class="ev"><p class="when">Noviembre</p><h3>Aguinaldos y bono de fin de año: cuánto alcanza con el salario de hoy</h3><p class="que">7.229 impresiones en cuatro semanas; es el tema de bolsillo con fecha fija</p></div><div class="ev"><p class="when">Noviembre</p><h3>Balance de la reconstrucción a cuatro meses de los terremotos</h3><p class="que">«terremoto» y «funvisis»: 8.004 impresiones en cuatro semanas</p></div><div class="ev"><p class="when">Diciembre</p><h3>Calendario bancario 2027 y días feriados</h3><p class="que">23.965 impresiones en cuatro semanas; se busca todos los diciembres</p></div><div class="ev"><p class="when">Diciembre</p><h3>Qué dejó el año del acuerdo petrolero: barriles, empresas y dinero que entró</h3><p class="que">cierra el tema que más publicó en el año y le permite una nota de balance, no de agenda</p></div><div class="ev"><p class="when">Enero</p><h3>Inflación de 2026 y proyecciones para 2027</h3><p class="que">«inflación» y «dólar»: 621 impresiones en cuatro semanas</p></div><div class="ev"><p class="when">Enero</p><h3>Regreso a clases y calendario escolar</h3><p class="que">33.926 impresiones en cuatro semanas; ya le funcionó en septiembre</p></div><div class="ev"><p class="when">Enero</p><h3>Resultados anuales de las petroleras que entraron a Venezuela</h3><p class="que">471.188 impresiones en cuatro semanas</p></div></div>
+  <p class="nota">Esta tabla es agenda, no medición: las fechas son ciertas y la demanda de cada tema está en sus
+  propias consultas, pero todavía no hay datos de octubre a enero para decir cuánto rendirá cada una.</p>
+</section>
+
+<section aria-labelledby="s-ever">
+  <div class="sec-head">
+    <p class="eyebrow">Vida larga</p>
+    <h2 id="s-ever">Notas viejas que siguen trabajando</h2>
+    <p>Sus notas publicadas antes del 20 de julio de 2026 que todavía traían vistas en la ventana.</p>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>Nota</th><th>Publicada</th><th>Vistas en la ventana</th><th>De búsqueda</th></tr></thead><tbody><tr><td>Pedro Vallenilla, fundador de Cashea: Venture Capital está mirando a…</td><td>26 jul 2023</td><td><div class="barline"><div class="bar" title="220 vistas" style="--w:100.0%"><span class="fill"></span></div><span class="val">220</span></div></td><td>203</td></tr><tr><td>Trump asegura que la CIA conocía la influencia de Maduro en elecciones de…</td><td>17 jul 2026</td><td><div class="barline"><div class="bar" title="49 vistas" style="--w:22.3%"><span class="fill"></span></div><span class="val">49</span></div></td><td>6</td></tr><tr><td>¿Qué está ocurriendo con las transacciones a través de Zelle en Venezuela?</td><td>20 nov 2023</td><td><div class="barline"><div class="bar" title="32 vistas" style="--w:14.5%"><span class="fill"></span></div><span class="val">32</span></div></td><td>25</td></tr><tr><td>Venezuela oficializa nuevas tarifas de gas metano para sectores manufactura…</td><td>31 ago 2023</td><td><div class="barline"><div class="bar" title="24 vistas" style="--w:10.9%"><span class="fill"></span></div><span class="val">24</span></div></td><td>14</td></tr><tr><td>En Venezuela se prohíbe el consumo y la comercialización de vapers…</td><td>3 ago 2023</td><td><div class="barline"><div class="bar" title="20 vistas" style="--w:9.1%"><span class="fill"></span></div><span class="val">20</span></div></td><td>16</td></tr><tr><td>El IGTF para pagos en dólares no dejará de estar presente en Venezuela para…</td><td>27 sep 2023</td><td><div class="barline"><div class="bar" title="15 vistas" style="--w:6.8%"><span class="fill"></span></div><span class="val">15</span></div></td><td>3</td></tr></tbody></table></div>
+  <p class="nota"><b>Casi no tiene notas con vida larga.</b> Solo 1 de sus
+  986 notas anteriores a la ventana pasaron de 50 vistas en estos dos meses. Su trabajo se agota en días:
+  todo lo que hace depende de publicar otra vez.</p>
+</section>
+
+<section aria-labelledby="s-gsc">
+  <div class="sec-head">
+    <p class="eyebrow">Búsqueda</p>
+    <h2 id="s-gsc">Búsquedas que ya piden una nota</h2>
+    <p>Consultas de su terreno —sin las de servicio del Estado, que son de otra gente— con demanda y sin clics.
+    Es lo que Google ya le muestra y nadie abre.</p>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>Consulta</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>Posición</th></tr></thead><tbody><tr><td>binance card venezuela</td><td><div class="barline"><div class="bar" title="6.696 impresiones" style="--w:100.0%"><span class="fill"></span></div><span class="val">6.696</span></div></td><td>9</td><td>0,13%</td><td>7,7</td></tr><tr><td>petróleos de venezuela</td><td><div class="barline"><div class="bar" title="4.185 impresiones" style="--w:62.5%"><span class="fill"></span></div><span class="val">4.185</span></div></td><td>28</td><td>0,67%</td><td>6,8</td></tr><tr><td>totalenergies</td><td><div class="barline"><div class="bar" title="3.556 impresiones" style="--w:53.1%"><span class="fill"></span></div><span class="val">3.556</span></div></td><td>35</td><td>0,98%</td><td>3,1</td></tr><tr><td>bloomberg línea</td><td><div class="barline"><div class="bar" title="3.139 impresiones" style="--w:46.9%"><span class="fill"></span></div><span class="val">3.139</span></div></td><td>49</td><td>1,56%</td><td>4,2</td></tr><tr><td>requisitos para abrir una cuenta en el banco mercantil</td><td><div class="barline"><div class="bar" title="2.841 impresiones" style="--w:42.4%"><span class="fill"></span></div><span class="val">2.841</span></div></td><td>6</td><td>0,21%</td><td>7,8</td></tr><tr><td>aumento de sueldo en venezuela 2026</td><td><div class="barline"><div class="bar" title="2.642 impresiones" style="--w:39.5%"><span class="fill"></span></div><span class="val">2.642</span></div></td><td>11</td><td>0,42%</td><td>6,3</td></tr><tr><td>binance card</td><td><div class="barline"><div class="bar" title="2.471 impresiones" style="--w:36.9%"><span class="fill"></span></div><span class="val">2.471</span></div></td><td>4</td><td>0,16%</td><td>8,7</td></tr><tr><td>funvisis</td><td><div class="barline"><div class="bar" title="2.374 impresiones" style="--w:35.5%"><span class="fill"></span></div><span class="val">2.374</span></div></td><td>34</td><td>1,43%</td><td>5,3</td></tr></tbody></table></div>
+  <p class="nota">El resto de la sección gana 72.298 clics de búsqueda con notas que ella no firma
+  (bonos, RIF, SENIAT). No se trata de que escriba trámites: se trata de que sus temas tienen versión buscable, y
+  cuando la escribió —el regreso a clases, el hantavirus, el precio del iPhone— le trajo búsqueda.</p>
+  <div class="table-wrap"><table><thead><tr><th>Lo que gana la sección sin ella</th><th>Clics</th><th>Impresiones</th></tr></thead><tbody><tr><td>ingreso integral de septiembre en venezuela el dia en que empezaria el pago po</td><td>16.000</td><td>239.004</td></tr><tr><td>que paso con el bono de guerra para pensionados de agosto 2026</td><td>12.039</td><td>255.464</td></tr><tr><td>anuncios sobre el pago del bono unico familiar de septiembre 2026</td><td>4.633</td><td>67.487</td></tr><tr><td>como imprimir el rif del seniat guia 2026 2027</td><td>4.014</td><td>621.800</td></tr><tr><td>esto sabemos del pago de bono de guerra economica de julio 2026</td><td>3.876</td><td>207.549</td></tr><tr><td>bono unico familiar y 100 amor mayor septiembre 2026 cuanto pagan y cuando lle</td><td>3.467</td><td>100.923</td></tr><tr><td>como sacar mir rif por primera vez sin ir al seniat</td><td>2.580</td><td>236.149</td></tr><tr><td>todo sobre el pago del bono unico de vacaciones 2026 en venezuela para quienes</td><td>2.465</td><td>103.069</td></tr></tbody></table></div>
+</section>
+
+<section aria-labelledby="s-stop">
+  <div class="sec-head">
+    <p class="eyebrow">Recortes</p>
+    <h2 id="s-stop">Qué dejar de publicar</h2>
+  </div>
+  <ul class="stop"><li><h3>Política y negociaciones</h3><p>33 notas con mediana de 2 vistas. «Venezuela libera a 99 presos políticos que habían…» (1), «Estatuas de Chávez y afiches de Maduro son tumbadas…» (1).</p></li><li><h3>Macro: inflación, dólar y salario</h3><p>26 notas con mediana de 4 vistas. «Inflación en Venezuela registró leve aumento en…» (1), «Economías ilícitas en Venezuela representaron el…» (1).</p></li><li><h3>Petróleo y acuerdos con EE.UU.</h3><p>25 notas con mediana de 7 vistas. «Actividad petrolera venezolana creció 12,99% en el…» (1), «India está dispuesto a comprar crudo venezolano a…» (1).</p></li><li><h3>La nota de agenda sin cifra ni consecuencia</h3><p>Sus seis notas más flojas de la ventana hacen entre 0 y 78 vistas en siete días, contra una mediana de 180. Ninguna lleva cifra en el titular.</p></li></ul>
+</section>
+
+<section>
+  <div class="sec-head"><p class="eyebrow">El detalle</p><h2>Nota por nota, en su primera semana</h2>
+  <p>Sus notas publicadas entre el 20 de julio de 2026 y el 13 de septiembre de 2026, con sus siete primeros días completos.</p></div>
+  <div class="table-wrap"><table><thead><tr><th>Nota</th><th>Publicada</th><th>Vistas 7 días</th><th>Discover</th><th>Búsqueda</th><th>Caract.</th><th>Tema</th></tr></thead><tbody><tr><td>Liberty Mutual obtiene un laudo de más de US$1.500 millones contra…</td><td>7 ago</td><td><div class="barline"><div class="bar" title="2.604 vistas" style="--w:100.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">2.604</span></div></td><td>2.661</td><td>87</td><td>105</td><td>Deuda, laudos y activos</td></tr><tr><td>A un mes del doble terremoto en Venezuela, la cifra de desaparecidos…</td><td>27 jul</td><td><div class="barline"><div class="bar" title="1.598 vistas" style="--w:61.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">1.598</span></div></td><td>0</td><td>2.006</td><td>95</td><td>Terremotos y reconstrucción</td></tr><tr><td>Trump anuncia acuerdo con Venezuela para controlar más de 65.000…</td><td>28 ago</td><td><div class="barline"><div class="bar" title="1.438 vistas" style="--w:55.2%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">1.438</span></div></td><td>178</td><td>40</td><td>85</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>De cuánto fue el temblor hoy, 18 de agosto, en Venezuela: magnitud,…</td><td>18 ago</td><td><div class="barline"><div class="bar" title="1.302 vistas" style="--w:50.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">1.302</span></div></td><td>0</td><td>320</td><td>84</td><td>Terremotos y reconstrucción</td></tr><tr><td>Proyecto privado busca crear un campus de IA con generación propia de…</td><td>10 sep</td><td><div class="barline"><div class="bar" title="1.238 vistas" style="--w:47.5%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">1.238</span></div></td><td>190</td><td>165</td><td>88</td><td>Empresas y capital que llega</td></tr><tr><td>Binance despliega su tarjeta en Venezuela en un mercado impulsado por…</td><td>5 ago</td><td><div class="barline"><div class="bar" title="1.010 vistas" style="--w:38.8%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">1.010</span></div></td><td>69</td><td>688</td><td>96</td><td>Empresas y capital que llega</td></tr><tr><td>Quién es Steve Hanke, el experto que analizará los escenarios para…</td><td>21 ago</td><td><div class="barline"><div class="bar" title="967 vistas" style="--w:37.1%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">967</span></div></td><td>44</td><td>514</td><td>86</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Quién es Alejandro Betancourt, el controvertido empresario al que…</td><td>31 ago</td><td><div class="barline"><div class="bar" title="802 vistas" style="--w:30.8%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">802</span></div></td><td>3</td><td>147</td><td>101</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Hantavirus en Venezuela: qué se sabe de los casos confirmados y la…</td><td>23 jul</td><td><div class="barline"><div class="bar" title="690 vistas" style="--w:26.5%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">690</span></div></td><td>0</td><td>1.170</td><td>84</td><td>Otros</td></tr><tr><td>¿General Motors de vuelta en Venezuela? La automotriz aclara su…</td><td>6 ago</td><td><div class="barline"><div class="bar" title="604 vistas" style="--w:23.2%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">604</span></div></td><td>17</td><td>99</td><td>80</td><td>Empresas y capital que llega</td></tr><tr><td>Estos son los ejecutivos que llevarán la nueva estrategia energética…</td><td>2 sep</td><td><div class="barline"><div class="bar" title="578 vistas" style="--w:22.2%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">578</span></div></td><td>0</td><td>349</td><td>81</td><td>Otros</td></tr><tr><td>Regreso a clases en Venezuela será el 14 de septiembre: así queda el…</td><td>10 sep</td><td><div class="barline"><div class="bar" title="563 vistas" style="--w:21.6%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">563</span></div></td><td>54</td><td>677</td><td>97</td><td>Servicio y bolsillo</td></tr><tr><td>Cashea recauda US$100 millones para ampliar el crédito y desarrollar…</td><td>21 jul</td><td><div class="barline"><div class="bar" title="509 vistas" style="--w:19.5%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">509</span></div></td><td>0</td><td>0</td><td>103</td><td>Empresas y capital que llega</td></tr><tr><td>iPhone 18 Pro Max en Venezuela: cuánto costaría con impuestos y…</td><td>9 sep</td><td><div class="barline"><div class="bar" title="405 vistas" style="--w:15.6%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">405</span></div></td><td>30</td><td>390</td><td>80</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Una startup venezolana logró importante ronda de inversión al…</td><td>24 ago</td><td><div class="barline"><div class="bar" title="367 vistas" style="--w:14.1%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">367</span></div></td><td>12</td><td>33</td><td>97</td><td>Empresas y capital que llega</td></tr><tr><td>Fuerte temblor sacude a Caracas con epicentro en la zona afectada por…</td><td>18 ago</td><td><div class="barline"><div class="bar" title="362 vistas" style="--w:13.9%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">362</span></div></td><td>0</td><td>248</td><td>88</td><td>Terremotos y reconstrucción</td></tr><tr><td>EE.UU. asegura que habrá elecciones en Venezuela, pero aún no pone…</td><td>6 sep</td><td><div class="barline"><div class="bar" title="361 vistas" style="--w:13.9%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">361</span></div></td><td>12</td><td>166</td><td>83</td><td>Política y negociaciones</td></tr><tr><td>Machado cuestiona el acuerdo petrolero con EE.UU. y Delcy Rodríguez…</td><td>3 sep</td><td><div class="barline"><div class="bar" title="330 vistas" style="--w:12.7%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">330</span></div></td><td>50</td><td>41</td><td>94</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Dólar BCV hoy 8 de septiembre: la tasa oficial sube a 814,69 bolívares</td><td>8 sep</td><td><div class="barline"><div class="bar" title="329 vistas" style="--w:12.6%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">329</span></div></td><td>0</td><td>0</td><td>70</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Oxford Economics ve un gran potencial en el acuerdo petrolero de…</td><td>7 sep</td><td><div class="barline"><div class="bar" title="298 vistas" style="--w:11.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">298</span></div></td><td>11</td><td>49</td><td>102</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Estados Unidos y Venezuela formalizan en Caracas su histórico acuerdo…</td><td>2 sep</td><td><div class="barline"><div class="bar" title="261 vistas" style="--w:10.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">261</span></div></td><td>0</td><td>23</td><td>79</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Marco Rubio defiende a Alejandro Betancourt y vincula acuerdo…</td><td>2 sep</td><td><div class="barline"><div class="bar" title="240 vistas" style="--w:9.2%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">240</span></div></td><td>0</td><td>81</td><td>99</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Oxford Economics recorta a 6,3% su previsión de crecimiento para…</td><td>11 ago</td><td><div class="barline"><div class="bar" title="236 vistas" style="--w:9.1%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">236</span></div></td><td>0</td><td>45</td><td>102</td><td>Terremotos y reconstrucción</td></tr><tr><td>¿Cómo funcionarán los vuelos en el aeropuerto de Maiquetía en…</td><td>27 ago</td><td><div class="barline"><div class="bar" title="209 vistas" style="--w:8.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">209</span></div></td><td>4</td><td>152</td><td>98</td><td>Terremotos y reconstrucción</td></tr><tr><td>Producción petrolera de Venezuela pierde impulso mientras las…</td><td>12 ago</td><td><div class="barline"><div class="bar" title="200 vistas" style="--w:7.7%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">200</span></div></td><td>20</td><td>42</td><td>88</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Startup israelí recauda US$12 millones para verificar concreto tras…</td><td>22 jul</td><td><div class="barline"><div class="bar" title="196 vistas" style="--w:7.5%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">196</span></div></td><td>0</td><td>0</td><td>91</td><td>Empresas y capital que llega</td></tr><tr><td>Funvisis reporta sismos de 4,4 y 3,4 en Venezuela, sentidos en la…</td><td>8 sep</td><td><div class="barline"><div class="bar" title="185 vistas" style="--w:7.1%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">185</span></div></td><td>5</td><td>261</td><td>80</td><td>Terremotos y reconstrucción</td></tr><tr><td>Oxford Economics advierte que el nuevo boom petrolero de Venezuela…</td><td>10 sep</td><td><div class="barline"><div class="bar" title="174 vistas" style="--w:6.7%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">174</span></div></td><td>0</td><td>37</td><td>100</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Empresas estadounidenses amplían su cooperación en el desarrollo del…</td><td>19 ago</td><td><div class="barline"><div class="bar" title="173 vistas" style="--w:6.6%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">173</span></div></td><td>0</td><td>0</td><td>88</td><td>Petróleo y acuerdos con EE.UU.</td></tr><tr><td>Delcy Rodríguez y Trump abordan la posibilidad de nuevas elecciones…</td><td>2 sep</td><td><div class="barline"><div class="bar" title="166 vistas" style="--w:6.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">166</span></div></td><td>0</td><td>24</td><td>80</td><td>Política y negociaciones</td></tr><tr><td>El salario de un obrero industrial en Venezuela cubre apenas el 41%…</td><td>19 ago</td><td><div class="barline"><div class="bar" title="164 vistas" style="--w:6.3%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">164</span></div></td><td>1</td><td>11</td><td>90</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Los daños del doble terremoto anticipan una reconstrucción millonaria…</td><td>20 jul</td><td><div class="barline"><div class="bar" title="155 vistas" style="--w:6.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">155</span></div></td><td>0</td><td>27</td><td>82</td><td>Terremotos y reconstrucción</td></tr><tr><td>Desde la inflación en Perú a la OPI de Shein: esta es la agenda…</td><td>30 ago</td><td><div class="barline"><div class="bar" title="153 vistas" style="--w:5.9%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">153</span></div></td><td>0</td><td>0</td><td>86</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Subsidio de vivienda en Venezuela para víctimas de los terremotos:…</td><td>29 jul</td><td><div class="barline"><div class="bar" title="146 vistas" style="--w:5.6%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">146</span></div></td><td>0</td><td>132</td><td>86</td><td>Terremotos y reconstrucción</td></tr><tr><td>Inflación sube nuevamente en Venezuela: julio registró variación de…</td><td>12 ago</td><td><div class="barline"><div class="bar" title="137 vistas" style="--w:5.3%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">137</span></div></td><td>0</td><td>0</td><td>73</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Cierra el “Hospital McDonald’s”, el restaurante que se transformó en…</td><td>27 ago</td><td><div class="barline"><div class="bar" title="124 vistas" style="--w:4.8%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">124</span></div></td><td>0</td><td>52</td><td>98</td><td>Terremotos y reconstrucción</td></tr><tr><td>Inflación en Venezuela se desacelera a 8,9% en agosto tras el repunte…</td><td>4 sep</td><td><div class="barline"><div class="bar" title="124 vistas" style="--w:4.8%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">124</span></div></td><td>3</td><td>19</td><td>88</td><td>Terremotos y reconstrucción</td></tr><tr><td>Marco Rubio ve a Machado con un rol en las conversaciones sobre…</td><td>23 jul</td><td><div class="barline"><div class="bar" title="115 vistas" style="--w:4.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">115</span></div></td><td>0</td><td>0</td><td>96</td><td>Política y negociaciones</td></tr><tr><td>Las operaciones en el principal aeropuerto de Venezuela se podrían…</td><td>30 jul</td><td><div class="barline"><div class="bar" title="109 vistas" style="--w:4.2%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">109</span></div></td><td>2</td><td>46</td><td>101</td><td>Terremotos y reconstrucción</td></tr><tr><td>Venezuela e Israel acuerdan un mecanismo consular tras 17 años de…</td><td>11 ago</td><td><div class="barline"><div class="bar" title="106 vistas" style="--w:4.1%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">106</span></div></td><td>1</td><td>13</td><td>85</td><td>Otros</td></tr><tr><td>Perú blinda cinco penales de alta seguridad ante el avance del crimen…</td><td>6 sep</td><td><div class="barline"><div class="bar" title="104 vistas" style="--w:4.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">104</span></div></td><td>0</td><td>0</td><td>80</td><td>Otros</td></tr><tr><td>Bolsa de Caracas se dispara 146% en 2026 en medio de ajustes en el…</td><td>4 ago</td><td><div class="barline"><div class="bar" title="103 vistas" style="--w:4.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">103</span></div></td><td>0</td><td>17</td><td>84</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Venezuela anuncia la excarcelación de 131 presos políticos</td><td>14 ago</td><td><div class="barline"><div class="bar" title="92 vistas" style="--w:3.5%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">92</span></div></td><td>0</td><td>13</td><td>58</td><td>Política y negociaciones</td></tr><tr><td>Venezuela avanza en reforma para renovar el TSJ tras acuerdo en las…</td><td>27 ago</td><td><div class="barline"><div class="bar" title="89 vistas" style="--w:3.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">89</span></div></td><td>0</td><td>29</td><td>91</td><td>Política y negociaciones</td></tr><tr><td>Maiquetía opera al 45% desde terminales temporales y apunta a…</td><td>3 sep</td><td><div class="barline"><div class="bar" title="89 vistas" style="--w:3.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">89</span></div></td><td>18</td><td>12</td><td>98</td><td>Terremotos y reconstrucción</td></tr><tr><td>Venezuela y los fondos de ayuda tras los terremotos: ¿cómo se manejan…</td><td>14 ago</td><td><div class="barline"><div class="bar" title="88 vistas" style="--w:3.4%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">88</span></div></td><td>0</td><td>20</td><td>94</td><td>Empresas y capital que llega</td></tr><tr><td>A dos meses del terremoto, el principal aeropuerto de Venezuela…</td><td>25 ago</td><td><div class="barline"><div class="bar" title="86 vistas" style="--w:3.3%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">86</span></div></td><td>2</td><td>43</td><td>91</td><td>Terremotos y reconstrucción</td></tr><tr><td>El diálogo en Venezuela entrará en una nueva fase en septiembre: las…</td><td>31 ago</td><td><div class="barline"><div class="bar" title="82 vistas" style="--w:3.1%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">82</span></div></td><td>1</td><td>22</td><td>100</td><td>Política y negociaciones</td></tr><tr><td>BCV dice que el PIB venezolano aumentó 7,14% en el segundo trimestre…</td><td>19 ago</td><td><div class="barline"><div class="bar" title="78 vistas" style="--w:3.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">78</span></div></td><td>0</td><td>0</td><td>76</td><td>Macro: inflación, dólar y salario</td></tr><tr><td>Chavismo y oposición venezolana instalan formalmente una nueva mesa…</td><td>6 ago</td><td><div class="barline"><div class="bar" title="74 vistas" style="--w:2.8%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">74</span></div></td><td>0</td><td>9</td><td>78</td><td>Política y negociaciones</td></tr><tr><td>Cómo iniciar la vida financiera en Venezuela: requisitos para abrir…</td><td>20 ago</td><td><div class="barline"><div class="bar" title="50 vistas" style="--w:1.9%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">50</span></div></td><td>0</td><td>17</td><td>87</td><td>Servicio y bolsillo</td></tr><tr><td>Chavismo y oposición venezolana acuerdan renovar el TSJ en primera…</td><td>13 ago</td><td><div class="barline"><div class="bar" title="49 vistas" style="--w:1.9%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">49</span></div></td><td>2</td><td>35</td><td>89</td><td>Política y negociaciones</td></tr><tr><td>Venezuela Reporta: qué es, cómo funciona y por qué ha sido clave tras…</td><td>27 jul</td><td><div class="barline"><div class="bar" title="48 vistas" style="--w:1.8%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">48</span></div></td><td>0</td><td>8</td><td>84</td><td>Terremotos y reconstrucción</td></tr><tr><td>Venezuela alcanza una alta adopción cripto, pero sigue rezagada en…</td><td>1 sep</td><td><div class="barline"><div class="bar" title="0 vistas" style="--w:0.0%;--mid:6.9%"><span class="fill"></span><span class='mid'></span></div><span class="val">0</span></div></td><td>0</td><td>0</td><td>89</td><td>Otros</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <div class="sec-head"><p class="eyebrow">Método</p><h2>Qué muestran y qué no</h2></div>
+  <ul class="caveats">
+    <li><b>Vistas:</b> GA4 «All Sites GA4 Nuevo», páginas y pantallas por fecha, filtro <code>/latinoamerica/venezuela/</code>,
+    del 20 de julio de 2026 al 20 de septiembre de 2026. La extracción cuadra exactamente con el total del informe: 131.629 vistas.</li>
+    <li><b>Discover y búsqueda:</b> Search Console, propiedad de dominio, mismo filtro y misma ventana:
+    97 páginas en Discover y 734 en búsqueda.</li>
+    <li><b>Sus notas</b> salen del feed de su página de autor: 986 en total.</li>
+    <li><b>La mediana, no el promedio.</b> Unas pocas notas se llevan casi todo: el promedio haría ver bien temas
+    que no lo están.</li>
+    <li><b>Lo que no dice:</b> una nota puede rendir poco y ser necesaria. Esto mide audiencia, no valor periodístico.</li>
+    <li>Las cifras se bajan a mano de GA4 y de Search Console. No se estiman ni se completan.</li>
+  </ul>
+</section>
+<p class="firma">SEO · Bloomberg Línea · 23 de septiembre de 2026</p>
+</main>
+</body>
+</html>
