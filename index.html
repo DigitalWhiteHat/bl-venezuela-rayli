@@ -510,6 +510,10 @@
 .bl .bb{background:#f0f0f0;height:13px;border-radius:2px;overflow:hidden}
 .bl .bb i{display:block;height:100%}
 .bl .bv{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.quien{display:flex;align-items:center;gap:18px}
+.foto{width:80px;height:80px;border-radius:50%;object-fit:cover;flex:0 0 80px;
+ border:1px solid #e0e0e0;background:#f3f3f3}
+@media (max-width:620px){.quien{gap:14px}.foto{width:64px;height:64px;flex-basis:64px}}
 .notasbar{margin:18px 0 2px}
 .notasbar .leg{font-size:12px;color:#6b6b6b;margin:0 0 10px}
 .notasbar .sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin:0 6px 0 0;vertical-align:-1px}
@@ -541,7 +545,8 @@ ul.reco li:before{content:'';position:absolute;left:0;top:.52em;width:7px;height
 </head>
 <body>
 <header class="mast">
-<div><p class="kicker">Bloomberg Línea · SEO</p><h1>Qué le rinde a<br>Raylí Luján</h1></div>
+<div class="quien"><img class="foto" src="foto-rayli.jpg" alt="Raylí Luján" width="80" height="80">
+<div><p class="kicker">Bloomberg Línea · SEO</p><h1>Qué le rinde a<br>Raylí Luján</h1></div></div>
 <div><p class="lede">Venezuela. Duplicó la semana —de 2.194 clics de Google a 4.683— publicando menos de la mitad de notas: siete frente a dieciséis. Y lo que la movió es la página de servicio que quedó recomendada en el informe anterior: el calendario de feriados escolares, con 1.399 clics en tres días.</p>
 <p class="byline">Por <b>SEO</b> · semana del 3 al 9 de octubre de 2026</p></div>
 </header>
